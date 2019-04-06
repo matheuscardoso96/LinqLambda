@@ -41,8 +41,8 @@ namespace LinqLambda
                 }
 
                 //Mostrar soma dos salários dos funcionários cujo nome começa com a letra 'M'.
-                var sumPersonSalary = list.Where(p => p.Name[0] == 'M').Sum( p => p.Salary);
-                Console.WriteLine("Sum of salary of people whose name starts with 'M': " + sumPersonSalary.ToString("F2", CultureInfo.InvariantCulture));
+                var sumPeopleSalary = list.Where(p => p.Name[0] == 'M').Sum( p => p.Salary);
+                Console.WriteLine("Sum of salary of people whose name starts with 'M': " + sumPeopleSalary.ToString("F2", CultureInfo.InvariantCulture));
             }
             catch (IOException e)
             {
